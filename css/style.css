@@ -4,7 +4,9 @@ html{
 }
 
 body{
-  background-color: #737373;
+background: linear-gradient(132deg, rgba(157, 0, 176, 1) 0%, 5.378627022490923%, rgba(136, 0, 195, 1) 19.462136924266815%, 34.961074545478965%, rgba(132, 0, 127, 1) 45.08138597011566%, 65.74663745742254%, rgba(18, 17, 181, 1) 72.09876775741577%, 95.54140157535187%, rgba(25, 0, 50, 1) 100%);
+;
+
   font-size: 18px;
   line-height: 1.15;
   margin: 0;
@@ -44,13 +46,16 @@ h2{
 nav li{
   display:inline;
   padding-right:20px;
-
 }
 
 nav a{
   color: black;
   font-weight: bold;
   text-decoration: none; 
+}
+
+.activePage{
+  text-decoration: underline 5px;
 }
 
 nav li:hover {
@@ -68,7 +73,7 @@ nav li:hover {
 
 
 nav{
-  background-color: #ddd;
+  background-color: #FFF;
   padding: 25px 0; 
   text-align: left;
 }
@@ -85,6 +90,12 @@ footer{
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
+}
+
+.headerDec{
+  font-family: Times, 'Times New Roman', serif;
+  font-style: oblique;
+  text-align: center;
 }
 
 
@@ -144,7 +155,7 @@ nav>li:focus, nav>li:hover{
 first div in the grid  and place it in the grid. */
 .overview{
   grid-column: 1/-1;
-  background-image: url(../images/header.jpg);
+  background-image: url(../images/header.jpeg);
   /* background-color: #000; */
   background-attachment: fixed;
   background-position: center;
@@ -222,7 +233,6 @@ first div in the grid  and place it in the grid. */
   }
 
  /* Step 13:Write the selector/rule property to update the .text-block class */
-
   .text-block{
     max-height: 250px;
   }
